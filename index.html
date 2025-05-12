@@ -232,17 +232,30 @@
                  style="max-width: 380px; background: white; margin-left: 15px; margin-right: 15px;">
                 <h3 class="fw-bold mb-4">Be a part of India's Top Rated University</h3>
                 
-                <form id="leadForm" action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Ddy000002MbFt" method="POST">
-                    <input type="hidden" name="oid" value="00Ddy000002MbFt">
+                <form id="leadForm" action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQL00000DhWWb" method="POST">
+                    <input type="hidden" name="oid" value="00DQL00000DhWWb">
                     <input type="hidden" name="retURL" value="https://onelogica-com.github.io/sf_edDemo">
                 
                     <!-- Hidden Salesforce First/Last Name fields -->
                     <input type="hidden" id="first_name" name="first_name">
                     <input type="hidden" id="last_name" name="last_name">
+
+                    <div class="mb-3">
+                        <input type="text" id="company" class="form-control" placeholder="Company Name*" name="company" required>
+                    </div>
                 
                     <!-- Full Name input (split into first/last on submit using JS) -->
                     <div class="mb-3">
-                        <input type="text" id="full_name" class="form-control" placeholder="Your Name*" required>
+                        <input type="text" id="full_name" class="form-control" placeholder="Contact Person*" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" id="title" class="form-control" placeholder="Designation*" name="title" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email ID" required>
                     </div>
                 
                     <!-- Phone input with India flag -->
@@ -252,14 +265,22 @@
                                 <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" 
                                      alt="India flag" style="width: 20px;">
                             </span>
-                            <input type="tel" name="phone" class="form-control" placeholder="Phone Number*" required>
+                            <input type="tel" name="mobile" class="form-control" placeholder="Phone Number*" required>
                         </div>
                     </div>
-                
-                    <!-- Email -->
+
                     <div class="mb-3">
-                        <input type="email" name="email" class="form-control" placeholder="Your Email ID" required>
+                        <hr>
+                        <label>Referred by</label>
+                        <select id="00NQL00000NQsab" name="00NQL00000NQsab" class="form-select" required title="Referred by">
+                            <option disabled value="">Referred By</option><option value="Staff">Staff</option>
+                                <option value="Student">Student</option>
+                                <option value="Alumni">Alumni</option>
+                                <option value="Others">Others</option> 
+                        </select>
                     </div>
+                
+                    
                 
                     <!-- State -->
                     <!-- <div class="mb-3">
@@ -267,10 +288,14 @@
                     </div> -->
                 
                     <div class="mb-3">
-                        <input type="text" id="company" name="company" class="form-control" placeholder="Company">
+                        <input type="text" id="00NQL00000NQHRM" name="00NQL00000NQHRM" class="form-control" placeholder="Referral Name">
                     </div>
                     <div class="mb-3">
-                        <input type="text" id="city" name="city" class="form-control" placeholder="City">
+                        <input type="number" id="00NQL00000NQIRZ" name="00NQL00000NQIRZ" class="form-control" placeholder="Referral Phone">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" id="description" name="description" class="form-control" placeholder="Any Remarks">
                     </div>
                 
                     <!-- Consent message -->
